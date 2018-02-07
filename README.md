@@ -1,7 +1,9 @@
 # Tensorflow Ninjago character classification
-This is a project to familiarize with Tensorflow using image classification. 
+This is a project to familiarize with Tensorflow using image classification. My kids all love Ninjago, the animated Lego ninja cartoon series, hence the inspiration here!
 
-This setup is for a Mac.
+![Ninjago characters](http://ninjago.wikia.com/wiki/File:Ninjago.png)
+
+This setup is for a Mac. Let's get Tensorflow fired up. We'll run this in a Virtualenv to keep it separate and interference-free from other Python stuff on our machine.
 
 Install Tensorflow with Virtualenv. You'll need pip:
 ```
@@ -42,26 +44,43 @@ cd tensorflow-ninjago-character-classification
 
 Now we are ready to test out some pre-trained models before we train and test our own Ninjago character classification models. Among the pre-trained models are ```pomegranates``` and ```pandas```:
 
-Let's see if classify a couple pomegranates it has never seen before, based on its training:
+Let's see if it will classify a couple pomegranates it's never seen before, based on its training:
 ```
+python classifier.py --image_file images/fruit.jpg
+python classifier.py --image_file images/fruit2.jpeg
 ```
 
 And let's also test some pandas:
 ```
+python classifier.py --image_file images/animal.jpeg
+python classifier.py --image_file images/animal2.jpg
 ```
 
 Excellent! It clearly knows how to classify pomegranates and pandas.
 
-Next let's see how it does with our Ninjago characters. Since it knows absolutelyh nothing about Ninjago, we'll train it using 20 images of Lloyd and 20 images of Kai; 2 of the characters my kids like best. 20 images is not a lot at all, in fact it ius just about the bare minimum. it would be more accurate if we trained it using more pics. Let's let it run 500 training steps -- default is 4,000 so we're shortening it for a shorter run -- Tensorflow will perform better on GPUs FWIW:
+Next let's see how it does with our Ninjago characters. Since it knows absolutely nothing about Ninjago, we'll train it using 20 images of Lloyd and 20 images of Kai; two of the show's characters my kids like best. 20 images is not a lot at all, in fact it's just about the bare minimum. it would be more accurate if we trained it using more pics. 
+
+In our ```images/ninjago``` folder we'll add a ```kai``` dir and a ```lloyd``` dir. I simply grabbed the first 20 good images of each charcater from Google Images to populate the training image sets. View the images in this path to see what the model was trained on.
+
+Let's let it run 500 training steps -- default is 4,000 so we're shortening it for a shorter run -- Tensorflow will perform better on GPUs FWIW:
 ```
+python retrain.py --model_dir ./inception --image_dir images/ninjago --output_graph ./output.pb --output_labels ./labels.txt --how_many_training_steps 500
 ```
 
-Now that we've trained it, let's test our our newly trained model's ability to classify Ninjago characters it has never seen before as either Lloyd or Kai:
+Now that we've trained it, let's test our our newly trained model's ability to classify Ninjago characters it has never seen before as either Lloyd or Kai. I grabbed an image of each character from Google Images that was not part of the training set; our model has never laid eyes on these images. I placed the images in ```images/test```.
+
+This is the Lloyd image we're testing:
+![Lloyd](https://85toys.com/1593-thickbox_default/lego-ninjago-lloyd-original-minifigure-njo226-from-set-70596.jpg)
+
+And this is Kai:
+![Kai](https://c.76.my/Malaysia/lego-ninjago-kai-sleeveless-minifigure-legoland-1504-06-Legoland@9.jpg)
+
+Let's see if it will accurately classify these images:
 ```
 python retrain_model_classifier.py images/test/whoisthis1.jpeg
 python retrain_model_classifier.py images/test/whoisthis2.jpeg
 ```
 
-With limited training images (20) and limited steps, our model is able to accurately classify Ninjago characters as either Lloyd or Kai. We can make this more sophisticated, but this project showcases the power of Tensorflow's image classification.
+Hooray! 
 
-
+With limited training images (20) and limited steps, our model is able to accurately classify Ninjago characters as either Lloyd or Kai. We can make this more sophisticated, but this project showcases the power of Tensorflow's image classification and has helped me learn more about the platform.
