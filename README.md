@@ -60,7 +60,7 @@ python classifier.py --image_file images/animal2.jpg
 
 Excellent! It clearly knows how to classify pomegranates and pandas at >90% confidence. You'll see the result show something along the lines of ```(score = 0.98216)```.
 
-Next let's see how it does with our Ninjago characters. Since it knows absolutely nothing about Ninjago, we'll train it using 20 images of Lloyd and 20 images of Kai; two of the show's characters my kids like best. 20 images is not a lot at all, in fact it's just about the bare minimum. it would be more accurate if we trained it using more pics. 
+Next let's see how it does with our Ninjago characters. Unlike my kids, it knows absolutely nothing about Ninjago. We'll train it using 20 images of Lloyd and 20 images of Kai; two of the show's characters my kids like best. 20 images is not a lot at all, in fact it's just about the bare minimum. it would be more accurate if we trained it using more pics. 
 
 In our ```images/ninjago``` folder we'll add a ```kai``` dir and a ```lloyd``` dir. I simply grabbed the first 20 good images of each charcater from Google Images to populate the training image sets. View the images in this path to see what the model was trained on.
 
