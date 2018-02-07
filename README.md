@@ -1,7 +1,7 @@
 # Tensorflow Ninjago character classification
 This is a project to familiarize with Tensorflow using image classification. My kids all love Ninjago, the animated Lego ninja cartoon series, hence the inspiration here!
 
-![Ninjago characters](https://www.sky.com/assets2/lego-ninjago-masters-of-spinjitzu-tile-bd99b78c.jpg | width=100)
+![Ninjago characters](https://www.sky.com/assets2/lego-ninjago-masters-of-spinjitzu-tile-bd99b78c.jpg)
 
 This setup is for a Mac. Let's get Tensorflow fired up. We'll run this in a Virtualenv to keep it separate and interference-free from other Python stuff on our machine.
 
@@ -70,10 +70,10 @@ python retrain.py --model_dir ./inception --image_dir images/ninjago --output_gr
 Now that we've trained it, let's test our our newly trained model's ability to classify Ninjago characters it has never seen before as either Lloyd or Kai. I grabbed an image of each character from Google Images that was not part of the training set; our model has never laid eyes on these images. I placed the images in ```images/test```.
 
 This is the Lloyd image we're testing:
-![Lloyd](https://85toys.com/1593-thickbox_default/lego-ninjago-lloyd-original-minifigure-njo226-from-set-70596.jpg | width=100)
+![Lloyd](https://85toys.com/1593-thickbox_default/lego-ninjago-lloyd-original-minifigure-njo226-from-set-70596.jpg)
 
 And this is Kai:
-![Kai](https://c.76.my/Malaysia/lego-ninjago-kai-sleeveless-minifigure-legoland-1504-06-Legoland@9.jpg | width=100)
+![Kai](https://c.76.my/Malaysia/lego-ninjago-kai-sleeveless-minifigure-legoland-1504-06-Legoland@9.jpg)
 
 Let's see if it will accurately classify these images:
 ```
