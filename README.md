@@ -5,7 +5,7 @@ This is a project to familiarize with Tensorflow using image classification. My 
 
 The basis for this project can be found in [Tensorflow's Image Recognition docs](https://www.tensorflow.org/tutorials/image_recognition).
 
-This setup is for a Mac. Let's get Tensorflow fired up. We'll run this in a Virtualenv to keep it separate and interference-free from other Python stuff on our machine.
+This setup is for a Mac. Let's get Tensorflow fired up. We'll run this in a Virtualenv to keep it separate and interference-free from other Python stuff on our machine. We're running Python 2.7.x here.
 
 Install Tensorflow with Virtualenv. You'll need pip:
 ```
