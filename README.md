@@ -3,7 +3,7 @@ This is a project to familiarize with Tensorflow using image classification. My 
 
 ![Ninjago characters](https://www.sky.com/assets2/lego-ninjago-masters-of-spinjitzu-tile-bd99b78c.jpg)
 
-The basis for this project can be found in [Tensorflow's Image Recognition docs](https://www.tensorflow.org/tutorials/image_recognition).
+The basis for this project can be found in [Tensorflow's Image Recognition docs](https://www.tensorflow.org/tutorials/image_recognition). In this project I've retrained the Tensorflow Inception model to add new image classifications.
 
 This setup is for a Mac. Let's get Tensorflow fired up. We'll run this in a Virtualenv to keep it separate and interference-free from other Python stuff on our machine. We're running Python 2.7.x here. Please note this will also run with Python 3.x with some minor adjustments to our commands.
 
