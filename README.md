@@ -40,22 +40,22 @@ Install TensorFlow and all the packages that TensorFlow requires into the active
 
 Clone the repo and CD to the root project dir:
 ```
-git clone https://github.com/StuartAshby/tensorflow-ninjago-character-classification
-cd tensorflow-ninjago-character-classification
+(tensorflow)$ git clone https://github.com/StuartAshby/tensorflow-ninjago-character-classification
+(tensorflow)$ cd tensorflow-ninjago-character-classification
 ```
 
 Now we are ready to test out some pre-trained models before we train and test our own Ninjago character classification models. Among the pre-trained models are ```pomegranates``` and ```pandas```:
 
 Let's see if it will classify a couple pomegranates it's never seen before, based on its training:
 ```
-python classifier.py --image_file images/fruit.jpg
-python classifier.py --image_file images/fruit2.jpeg
+(tensorflow)$ python classifier.py --image_file images/fruit.jpg
+(tensorflow)$ python classifier.py --image_file images/fruit2.jpeg
 ```
 
 And let's also test some pandas:
 ```
-python classifier.py --image_file images/animal.jpeg
-python classifier.py --image_file images/animal2.jpg
+(tensorflow)$ python classifier.py --image_file images/animal.jpeg
+(tensorflow)$ python classifier.py --image_file images/animal2.jpg
 ```
 
 Excellent! It clearly knows how to classify pomegranates and pandas at >90% confidence. You'll see the result show something along the lines of ```(score = 0.98216)```.
@@ -66,7 +66,7 @@ In our ```images/ninjago``` folder we'll add a ```kai``` dir and a ```lloyd``` d
 
 Let's let it run 500 training steps -- default is 4,000 so we're shortening it for a shorter run -- Tensorflow will perform better on GPUs FWIW:
 ```
-python retrain.py --model_dir ./inception --image_dir images/ninjago --output_graph ./output.pb --output_labels ./labels.txt --how_many_training_steps 500
+(tensorflow)$ python retrain.py --model_dir ./inception --image_dir images/ninjago --output_graph ./output.pb --output_labels ./labels.txt --how_many_training_steps 500
 ```
 
 Now that we've trained it, let's test our our newly trained model's ability to classify Ninjago characters it has never seen before as either Lloyd or Kai. I grabbed an image of each character from Google Images that was not part of the training set; our model has never laid eyes on these images. I placed the images in ```images/test```.
@@ -79,8 +79,8 @@ And this is Kai:
 
 Let's see if it will accurately classify these images:
 ```
-python retrain_model_classifier.py images/test/whoisthis1.jpeg
-python retrain_model_classifier.py images/test/whoisthis2.jpeg
+(tensorflow)$ python retrain_model_classifier.py images/test/whoisthis1.jpeg
+(tensorflow)$ python retrain_model_classifier.py images/test/whoisthis2.jpeg
 ```
 
 Hooray! 
@@ -88,3 +88,10 @@ Hooray!
 With limited training images (20) and limited steps, our model is able to accurately classify Ninjago characters as either Lloyd or Kai. You should have scores in the neighborhood of 70% to 90%. 
 
 We can certainly make this more sophisticated, add more charcaters and pics and steps etc. etc. -- but this project showcases the power of Tensorflow's image classification and has helped me learn more about the platform.
+
+To deactivate the Tensorflow Virtualenv and return to your default bash prompt:
+```
+(tensorflow)$ deactivate
+```
+
+Enjoy! Go Ninjago!!!
