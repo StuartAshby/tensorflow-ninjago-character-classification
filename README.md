@@ -38,10 +38,10 @@ Install TensorFlow and all the packages that TensorFlow requires into the active
 (tensorflow)$ pip install --upgrade tensorflow
 ```
 
-Clone the repo and CD to the root project dir:
+Clone the repo and CD to the ```image_classification``` dir to run our code:
 ```
 (tensorflow)$ git clone https://github.com/StuartAshby/tensorflow-ninjago-character-classification
-(tensorflow)$ cd tensorflow-ninjago-character-classification
+(tensorflow)$ cd tensorflow-ninjago-character-classification/image_classification
 ```
 
 Now we are ready to test out some pre-trained models before we train and test our own Ninjago character classification models. Among the pre-trained models are ```pomegranates``` and ```pandas```:
