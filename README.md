@@ -38,7 +38,7 @@ Install TensorFlow and all the packages that TensorFlow requires into the active
 (tensorflow)$ pip install --upgrade tensorflow
 ```
 
-Clone the repo and CD to the root dir:
+Clone the repo and CD to the root project dir:
 ```
 git clone https://github.com/StuartAshby/tensorflow-ninjago-character-classification
 cd tensorflow-ninjago-character-classification
