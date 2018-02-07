@@ -56,7 +56,7 @@ python classifier.py --image_file images/animal.jpeg
 python classifier.py --image_file images/animal2.jpg
 ```
 
-Excellent! It clearly knows how to classify pomegranates and pandas.
+Excellent! It clearly knows how to classify pomegranates and pandas at >90% confidence. You'll see the result show something along the lines of ```(score = 0.98216)```.
 
 Next let's see how it does with our Ninjago characters. Since it knows absolutely nothing about Ninjago, we'll train it using 20 images of Lloyd and 20 images of Kai; two of the show's characters my kids like best. 20 images is not a lot at all, in fact it's just about the bare minimum. it would be more accurate if we trained it using more pics. 
 
@@ -83,4 +83,6 @@ python retrain_model_classifier.py images/test/whoisthis2.jpeg
 
 Hooray! 
 
-With limited training images (20) and limited steps, our model is able to accurately classify Ninjago characters as either Lloyd or Kai. We can make this more sophisticated, but this project showcases the power of Tensorflow's image classification and has helped me learn more about the platform.
+With limited training images (20) and limited steps, our model is able to accurately classify Ninjago characters as either Lloyd or Kai. You should have scores in the neighborhood of 70% to 90%. 
+
+We can certainly make this more sophisticated, but this project showcases the power of Tensorflow's image classification and has helped me learn more about the platform.
