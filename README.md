@@ -9,7 +9,7 @@ This setup is for a Mac. It will work on Windows (or Linux) as well, but you may
 
 Let's get Tensorflow fired up. We'll run this in a Virtualenv to keep it separate and interference-free from other Python stuff on our machine. We're running Python 2.7.x here. Please note this will also run with Python 3.x with some minor adjustments to our commands.
 
-Install Tensorflow with Virtualenv. You'll need pip:
+Install Tensorflow with Virtualenv. You'll need [pip](https://pip.pypa.io/en/stable/installing/):
 ```
 pip install --upgrade virtualenv
 ```
