@@ -60,11 +60,13 @@ And let's also test some never-before-seen pandas:
 
 Excellent! It clearly knows how to classify pomegranates and pandas at >90% confidence. You'll see the result show something along the lines of ```(score = 0.98216)``` or thereabouts.
 
-Next let's see how it does with our Ninjago characters. Unlike my kids, it knows absolutely nothing about Ninjago. We'll train it using 20 images of Lloyd and 20 images of Kai; two of the show's characters my kids like best. 20 images is not a lot at all, in fact it's just about the bare minimum. it would be more accurate if we trained it using more pics. 
+Next let's see how it does with our Ninjago characters. Unlike my kids, it knows absolutely nothing about Ninjago. 
 
-In our ```images/ninjago``` folder we'll add a ```kai``` dir and a ```lloyd``` dir. I simply grabbed the first 20 good images of each charcater from Google Images to populate the training image sets. View the images in this path to see what the model was trained on.
+We'll train it using 20 images of Lloyd and 20 images of Kai; two of the show's characters my kids like best. 20 images is not a lot at all, in fact it's just about the bare minimum. It may be more accurate if we trained it using more pics and adjusted some of the other configurations and/or code. We're going with simple and effective for the purposes of this project.
 
-Let's let it run 500 training steps -- default is 4,000 so we're shortening it for a shorter run -- Tensorflow will perform better on GPUs FWIW:
+In our ```images/ninjago``` folder we'll add a ```kai``` dir and a ```lloyd``` dir. I simply grabbed the first 20 good images of each charcater from Google Images to populate the training image sets. View the images in the path to see what the model was trained on.
+
+Let's let it run 500 training steps -- default is 4,000 so we're shortening it for a shorter run -- Tensorflow will perform much better on GPUs. Handles bottlenecks better. Just sayin'.:
 ```
 (tensorflow)$ python retrain.py --model_dir ./inception --image_dir images/ninjago --output_graph ./output.pb --output_labels ./labels.txt --how_many_training_steps 500
 ```
@@ -87,7 +89,7 @@ Hooray!
 
 With limited training images (only 20) and limited steps (only 500), our model is already able to (fairly) accurately classify Ninjago characters as either Lloyd or Kai. You should have scores in the neighborhood of 70% to 90%. For some reason it does seem to be a little better at classifying Lloyd moreso than Kai.
 
-We can certainly make this more sophisticated, add more charcaters and pics and steps etc. etc. -- but this is just a fun starter project to showcase the power of Tensorflow's image classification. It has helped me learn more about Tensorflow and its capabilities.
+We can certainly make this more sophisticated, add more charcaters and pics and steps etc. etc. -- but this is just a fun starter project to showcase the power of Tensorflow's image classification. It has helped me learn more about working with Tensorflow and its capabilities.
 
 To deactivate the Tensorflow Virtualenv and return to your default bash prompt:
 ```
