@@ -44,7 +44,7 @@ Clone the repo and CD to the ```image_classification``` dir to run our code:
 (tensorflow)$ cd tensorflow-ninjago-character-classification/image_classification
 ```
 
-Now we are ready to test out some pre-trained models before we train and test our own Ninjago character classification models. Among the pre-trained models are ```pomegranates``` and ```pandas```:
+Now we are ready to test out some pre-trained models before we train and test our own Ninjago character classification models. Among the pre-trained models Tensorflow Image Recognition comes with out of the box are ```pomegranates``` and ```pandas```:
 
 Let's see if it will classify a couple pomegranates it's never seen before, based on its training:
 ```
@@ -52,7 +52,7 @@ Let's see if it will classify a couple pomegranates it's never seen before, base
 (tensorflow)$ python classifier.py --image_file images/fruit2.jpeg
 ```
 
-And let's also test some pandas:
+And let's also test some never-before-seen pandas:
 ```
 (tensorflow)$ python classifier.py --image_file images/animal.jpeg
 (tensorflow)$ python classifier.py --image_file images/animal2.jpg
