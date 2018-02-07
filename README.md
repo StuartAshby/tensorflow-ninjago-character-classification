@@ -85,7 +85,7 @@ Let's see if it will accurately classify these images:
 
 Hooray! 
 
-With limited training images (20) and limited steps, our model is able to accurately classify Ninjago characters as either Lloyd or Kai. You should have scores in the neighborhood of 70% to 90%. 
+With limited training images (only 20) and limited steps (only 500), our model is already able to (fairly) accurately classify Ninjago characters as either Lloyd or Kai. You should have scores in the neighborhood of 70% to 90%. 
 
 We can certainly make this more sophisticated, add more charcaters and pics and steps etc. etc. -- but this project showcases the power of Tensorflow's image classification and has helped me learn more about the platform.
 
