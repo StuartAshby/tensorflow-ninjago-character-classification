@@ -100,9 +100,11 @@ You should see: “Hello, TensorFlow!”
 
 Congratulations! Your computer is now running one of the most powerful machine learning tools on the planet, created by the original Google Brain Team. Your car will one day be able to drive itself thanks to computers running TensorFlow. You have taken your first step towards becoming a data scientist!
 
-To exit your tensorflow environment type ```deactivate``` to resume run ```activate environment-name``` i.e. ```activate tensorflow```.
+If you'd like to exit your tensorflow environment type ```deactivate``` and to resume run ```activate environment-name``` i.e. ```activate tensorflow```. But we're good to go now, so let's start playing with Tensorflow!
 
 ## Play with Tensorflow
+
+Before you begin make sure you see the ```(tensorflow)``` preceding your comand prompt. That informs you that your virtua Tensorflow session is activated properly.
 
 Clone our project repo and CD to the ```image_classification``` dir to run the code:
 ```
