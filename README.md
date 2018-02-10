@@ -3,6 +3,15 @@ This is a project to familiarize with [Tensorflow](https://www.tensorflow.org/) 
 
 ![Ninjago characters](https://www.sky.com/assets2/lego-ninjago-masters-of-spinjitzu-tile-bd99b78c.jpg)
 
+## What is Artificial Intelligence (AI)?
+Remember 4 words: ```Intelligence demonstrated by machines```.
+
+## What is Machine Learning (ML)?
+Remember 4 more words: ```Machines learning without Programming```.
+
+## How do machines demonstrate intelligence and learn without being programmed?
+We must train them! Let's begin.
+
 The basis for this project can be found in [Tensorflow's Image Recognition docs](https://www.tensorflow.org/tutorials/image_recognition). In this project I've retrained the Tensorflow Inception model to add new image classifications. TensorFlow is an open-source software library for dataflow programming across a range of tasks. It is a symbolic math library, and also used for machine learning applications such as neural networks. As always, thank you [Wikipedia](https://en.wikipedia.org/wiki/TensorFlow).
 
 This setup is for a Mac. It will work on Windows (or Linux) as well, but you may need to make some adjustments. 
@@ -67,6 +76,7 @@ Now, inside your tensorflow environment, install TensorFlow:
 ```
 pip install --ignore-installed --upgrade tensorflow
 ```
+
 ## Test Tensorflow install
 Let’s do a Hello World program in python that uses the TensorFlow package to make sure it’s installed correctly.
 
@@ -93,10 +103,10 @@ To exit your tensorflow environment type ```deactivate``` to resume run ```activ
 
 ## Play with Tensorflow
 
-Clone the repo and CD to the ```image_classification``` dir to run our code:
+Clone our project repo and CD to the ```image_classification``` dir to run the code:
 ```
-(tensorflow)$ git clone https://github.com/StuartAshby/tensorflow-ninjago-character-classification
-(tensorflow)$ cd tensorflow-ninjago-character-classification/image_classification
+git clone https://github.com/StuartAshby/tensorflow-ninjago-character-classification
+cd tensorflow-ninjago-character-classification/image_classification
 ```
 
 Now we are ready to test out some pre-trained models before we train and test our own Ninjago character classification models. Among the pre-trained models Tensorflow Image Recognition comes with out of the box are ```pomegranates``` and ```pandas```:
