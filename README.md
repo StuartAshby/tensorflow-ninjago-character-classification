@@ -9,6 +9,7 @@ This setup is for a Mac. It will work on Windows (or Linux) as well, but you may
 
 Let's get Tensorflow fired up. We'll run this in a Virtualenv to keep it separate and interference-free from other Python stuff on our machine. We're running Python 2.7.x here. Please note this will also run with Python 3.x with some minor adjustments to our commands.
 
+## Setup for Mac
 Install Tensorflow with Virtualenv. You'll need [pip](https://pip.pypa.io/en/stable/installing/):
 ```
 pip install --upgrade virtualenv
@@ -32,13 +33,65 @@ This will change your bash prompt to the following:
 
 Make sure pip ≥8.1 is installed in your Virtualenv:
 ```
-(tensorflow)$ easy_install -U pip
+easy_install -U pip
 ```
 
 Install TensorFlow and all the packages that TensorFlow requires into the active Virtualenv environment:
 ```
-(tensorflow)$ pip install --upgrade tensorflow
+pip install --upgrade tensorflow
 ```
+
+## Setup for Windows
+First [Run the Anaconda Installer](https://repo.continuum.io/archive/Anaconda3-5.0.1-Windows-x86_64.exe).
+
+During installation, check the box to add Anaconda to your PATH.
+
+Once this incredibly long installation is complete, open a fresh command prompt window and create a new conda environment for running tensorflow:
+```
+conda create -n tensorflow pip python=3.5
+```
+Activate the tensorflow environment:
+
+```
+activate tensorflow
+```
+
+Your command prompt should now show:
+```
+(tensorflow) PATH>
+```
+
+Where PATH is the desired directory (i.e. C:\Users\Stuart Ashby).
+
+Now, inside your tensorflow environment, install TensorFlow:
+```
+pip install --ignore-installed --upgrade tensorflow
+```
+## Test Tensorflow install
+Let’s do a Hello World program in python that uses the TensorFlow package to make sure it’s installed correctly.
+
+Now let’s run a tensorflow “Hello world” program. Instead of creating a new python file, we’ll feed the code into Python one line at a time.
+
+Start python by running the python command:
+```
+python
+```
+Now enter each line of python code (don’t include the >>>):
+```
+>>> import tensorflow as tf
+>>> hello = tf.constant('Hello, TensorFlow!')
+>>> sess = tf.Session()
+>>> print(sess.run(hello))
+
+```
+
+You should see: “Hello, TensorFlow!” 
+
+Congratulations! Your computer is now running one of the most powerful machine learning tools on the planet, created by the original Google Brain Team. Your car will one day be able to drive itself thanks to computers running TensorFlow. You have taken your first step towards becoming a data scientist!
+
+To exit your tensorflow environment type ```deactivate``` to resume run ```activate environment-name``` i.e. ```activate tensorflow```.
+
+## Play with Tensorflow
 
 Clone the repo and CD to the ```image_classification``` dir to run our code:
 ```
