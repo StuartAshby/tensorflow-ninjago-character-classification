@@ -1,5 +1,5 @@
 # Tensorflow Ninjago character classification
-This is a project to familiarize with [Tensorflow](https://www.tensorflow.org/) using image classification. My kids all love [Ninjago](https://en.wikipedia.org/wiki/Lego_Ninjago), the animated Lego ninja cartoon series, hence the inspiration here!
+This is a project for [Create a LOOP](https://createaloop.org/) kid's coding club members -- or *anyone* really -- to familiarize with [Tensorflow](https://www.tensorflow.org/) using image classification. My kids all love [Ninjago](https://en.wikipedia.org/wiki/Lego_Ninjago), the animated Lego ninja cartoon series, hence the inspiration here!
 
 ![Ninjago characters](https://www.sky.com/assets2/lego-ninjago-masters-of-spinjitzu-tile-bd99b78c.jpg)
 
