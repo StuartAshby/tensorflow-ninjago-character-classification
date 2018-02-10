@@ -7,7 +7,7 @@ This is a project for [Create a LOOP](https://createaloop.org/) kid's coding clu
 Remember 4 words: ```Intelligence demonstrated by machines```.
 
 ## What is Machine Learning (ML)?
-Remember 4 more words: ```Machines learning without Programming```.
+Remember 4 more words: ```Machines learning without programming```.
 
 ## How do machines demonstrate intelligence and learn without being programmed?
 We must train them! Let's begin.
