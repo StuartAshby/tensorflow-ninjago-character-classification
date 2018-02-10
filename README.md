@@ -12,7 +12,7 @@ Remember 4 more words: ```Machines learning without programming```.
 ## How do machines demonstrate intelligence and learn without being programmed?
 We must train them! Let's begin.
 
-## What is this project all about?
+## What is the basis for this project?
 The basis for this project can be found in [Tensorflow's Image Recognition docs](https://www.tensorflow.org/tutorials/image_recognition). In this project I've retrained the Tensorflow Inception model to add new image classifications. TensorFlow is an open-source software library for dataflow programming across a range of tasks. It is a symbolic math library, and also used for machine learning applications such as neural networks. As always, thank you [Wikipedia](https://en.wikipedia.org/wiki/TensorFlow).
 
 This setup is for a Mac. It will work on Windows (or Linux) as well, but you may need to make some adjustments. 
