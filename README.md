@@ -89,15 +89,15 @@ python
 Now enter each line of python code (don’t include the >>>):
 ```
 >>> import tensorflow as tf
->>> hello = tf.constant('Hello, TensorFlow!')
+>>> hello = tf.constant('Hello, Tensorflow!')
 >>> sess = tf.Session()
 >>> print(sess.run(hello))
 
 ```
 
-You should see: “Hello, TensorFlow!” 
+You should see: “Hello, Tensorflow!” 
 
-Congratulations! Your computer is now running one of the most powerful machine learning tools on the planet, created by the original Google Brain Team. Your car will one day be able to drive itself thanks to computers running TensorFlow. You have taken your first step towards becoming a data scientist!
+Congratulations! Your computer is now running one of the most powerful machine learning tools on the planet, created by the original Google Brain Team. Your car will one day be able to drive itself thanks to computers running Tensorflow. You have taken your first step towards becoming a data scientist!
 
 Exit the Python terminal and return to the Virtualenv prompt:
 ```
