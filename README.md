@@ -162,4 +162,4 @@ We can certainly make this more sophisticated, add more characters and pics and 
 
 Enjoy! Go Ninjago!!!
 
-*Special thanks to [Akshay Pai](https://github.com/akshaypai) @akshaypai who you can also find writing awesome AI / ML on [Source Dexter](https://sourcedexter.com/author/akshayhpai94/), including [this post](https://sourcedexter.com/tensorflow-text-classification-python/) and [this post](https://sourcedexter.com/retrain-tensorflow-inception-model/) which informed this project.*
+*Special thanks to [Akshay Pai](https://github.com/akshaypai) who you can also find writing awesome AI / ML on [Source Dexter](https://sourcedexter.com/author/akshayhpai94/), including [this post](https://sourcedexter.com/tensorflow-text-classification-python/) and [this post](https://sourcedexter.com/retrain-tensorflow-inception-model/) which informed this project.*
