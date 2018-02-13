@@ -80,11 +80,9 @@ pip install --ignore-installed --upgrade tensorflow
 ```
 
 ## Test Tensorflow install
-Let’s do a Hello World program in python that uses the TensorFlow package to make sure it’s installed correctly.
+Let’s do a "Hello World" program in Python that uses the TensorFlow package to make sure it’s installed correctly. Instead of creating a new Python file, we’ll simply feed the code into Python one line at a time.
 
-Now let’s run a tensorflow “Hello world” program. Instead of creating a new python file, we’ll feed the code into Python one line at a time.
-
-Start python by running the python command:
+Start Python:
 ```
 python
 ```
